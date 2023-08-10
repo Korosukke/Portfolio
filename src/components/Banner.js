@@ -1,7 +1,37 @@
 import React from 'react';
+import Image from '../assets/avatar.svg'
+import {FaGithub, FaYoutube, FaLinkedin} from 'react-icons/fa'
+import { TypeAnimation } from 'react-type-animation';
+import { motion } from 'framer-motion';
+import {fadeIn} from '../variants';
+
+
 
 const Banner = () => {
-  return <div className='section' id='home'>Banner</div>;
+  return(
+  <section className='section' id='home'>
+    <div className='container mx-auto'>
+      <div>
+        <h1>Manas <span>Yadav</span></h1>
+      </div>
+      <div className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold'>
+        <span className='mr-4'>I am a</span>
+        <TypeAnimation sequence={[
+          'Android Developer',2000,
+          'Web Developer',2000,
+          'Software Developer',2000
+        ]}
+        speed={50}
+        className='text-accent'
+        wrapper='span'
+        repeat={Infinity}/>
+      </div>
+      <div>
+        <img src={Image}/>
+      </div>
+      </div>  
+  </section>
+  );
 };
 
 export default Banner;
