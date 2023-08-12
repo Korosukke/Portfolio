@@ -14,18 +14,23 @@ const Banner = () => {
       <div>
         <h1>Manas <span>Yadav</span></h1>
       </div>
-      <div className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold'>
-        <span className='mr-4'>I am a</span>
+      <div className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
+        <span className='text-white mr-4'>I am</span>
+        
         <TypeAnimation sequence={[
-          'Android Developer',2000,
-          'Web Developer',2000,
-          'Software Developer',2000
+          'an Android Developer',2000,
+          'a Web Developer',2000,
+          'a Software Developer',2000
         ]}
         speed={50}
         className='text-accent'
         wrapper='span'
         repeat={Infinity}/>
       </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+        et dolore magna aliqua. Eget arcu dictum varius duis at consectetur. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam.
+         Vestibulum lorem sed risus ultricies tristique nulla aliquet.
+       </p>
       <div>
         <img src={Image}/>
       </div>
